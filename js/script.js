@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    // $(".owl-carousel").owlCarousel({
-    //         loop: true,
-    //         margin: 10,
-    //         nav: true,
-    //         items: 1,
-    //         mouseDrag: false,
-    //         smartSpeed: 1000
-    //     }
-    // );
+    $(".owl-carousel").owlCarousel({
+            loop: true,
+            nav: true,
+            items: 1,
+            smartSpeed: 1000,
+            dots: false,
+            navText: ""
+        }
+    );
 });

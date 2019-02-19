@@ -10,6 +10,26 @@
 body {
   overflow-x: hidden; }
 
+h2 {
+  font-family: RalewaySemiBold, Arial, sans-serif;
+  font-size: 24px;
+  margin: 150px 0 60px 0;
+  color: #24282f;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative; }
+
+h2:after {
+  content: '';
+  height: 2px;
+  width: 76px;
+  background-color: #b5a263;
+  bottom: -38px;
+  left: 50%;
+  margin-left: -33px;
+  display: block;
+  position: absolute; }
+
 .container {
   max-width: 1380px;
   margin: auto;
@@ -21,7 +41,7 @@ body {
   display: block;
   clear: both; }
 
-.main-font, header .main-menu li a, header .about-us p, main .manager-block .name-position h4 {
+.main-font, header .main-menu li a, header .about-us p, main .manager-block .name-position h4, .slider-info .slider-content p, .slider-info .slider-content h4 {
   font-family: OpenSansRegular, arial, sans-serif;
   font-size: 14px;
   color: white; }
@@ -91,24 +111,6 @@ main {
   main .container {
     max-width: 1120px;
     text-align: center; }
-  main h2 {
-    font-family: RalewaySemiBold, Arial, sans-serif;
-    font-size: 24px;
-    margin: 150px 0 60px 0;
-    color: #24282f;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative; }
-  main h2:after {
-    content: '';
-    height: 2px;
-    width: 76px;
-    background-color: #b5a263;
-    bottom: -38px;
-    left: 50%;
-    margin-left: -33px;
-    display: block;
-    position: absolute; }
   main .manager-block {
     display: inline-block;
     margin: 0 4% 40px 0; }
@@ -164,9 +166,58 @@ main {
     border: 1px solid #24282f;
     color: #24282f;
     text-transform: uppercase;
-    font-family: OpenSansLight,Arial, sans-serif;
+    font-family: OpenSansLight, Arial, sans-serif;
     font-size: 16px;
     width: 160px;
     padding: 15px 40px; }
+
+.slider-info {
+  background-color: #f7f7f7;
+  padding: 120px 0; }
+  .slider-info .container {
+    max-width: 1120px; }
+  .slider-info h2 {
+    margin-top: 0; }
+  .slider-info h2:after {
+    background-color: #24282f; }
+  .slider-info .slider-content .portrait {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 20px auto 40px auto; }
+  .slider-info .slider-content p {
+    font-family: OpenSansLight, Arial, sans-serif;
+    line-height: 24px;
+    text-align: center;
+    color: black;
+    max-width: 800px;
+    margin: auto auto 45px auto; }
+  .slider-info .slider-content h3 {
+    font-family: RalewaySemiBold, Arial, sans-serif;
+    font-size: 16px;
+    color: #b5a263;
+    margin-bottom: 10px;
+    text-align: center; }
+  .slider-info .slider-content h4 {
+    color: black;
+    text-align: center;
+    padding-bottom: 5px; }
+  .slider-info .owl-carousel .owl-nav button.owl-prev,
+  .slider-info .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    outline: none; }
+  .slider-info .owl-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: 10px; }
+  .slider-info .owl-carousel .owl-nav button.owl-prev:before,
+  .slider-info .owl-carousel .owl-nav button.owl-next:before {
+    content: '\f104';
+    font-weight: 300;
+    font-family: "Font Awesome 5 Pro", Arial, sans-serif;
+    font-size: 30px; }
+  .slider-info .owl-carousel .owl-nav button.owl-next:before {
+    content: '\f105'; }
 
 /*# sourceMappingURL=style.css.map */

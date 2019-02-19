@@ -2,6 +2,14 @@
 @import url(../css/fonts.css);
 @import url(../fontawesome/css/all.css);
 @import url(../css/owl.carousel.css);
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+body {
+  overflow-x: hidden; }
+
 .container {
   max-width: 1380px;
   margin: auto;
@@ -13,7 +21,7 @@
   display: block;
   clear: both; }
 
-.main-font, header .main-menu li a, header .about-us p {
+.main-font, header .main-menu li a, header .about-us p, main .manager-block .name-position h4 {
   font-family: OpenSansRegular, arial, sans-serif;
   font-size: 14px;
   color: white; }
@@ -77,5 +85,88 @@ header {
     header .about-us p {
       line-height: 24px;
       max-width: 800px; }
+
+main {
+  background-color: #FFFFFF; }
+  main .container {
+    max-width: 1120px;
+    text-align: center; }
+  main h2 {
+    font-family: RalewaySemiBold, Arial, sans-serif;
+    font-size: 24px;
+    margin: 150px 0 60px 0;
+    color: #24282f;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative; }
+  main h2:after {
+    content: '';
+    height: 2px;
+    width: 76px;
+    background-color: #b5a263;
+    bottom: -38px;
+    left: 50%;
+    margin-left: -33px;
+    display: block;
+    position: absolute; }
+  main .manager-block {
+    display: inline-block;
+    margin: 0 4% 40px 0; }
+    @media screen and (max-width: 1110px) {
+      main .manager-block {
+        margin: 0 1.5% 40px 1.5%; } }
+    @media screen and (max-width: 767px) {
+      main .manager-block {
+        margin: 0 10px 40px 10px; } }
+    main .manager-block .photo {
+      background: url("../images/bg_1.jpg") center center;
+      background-size: cover;
+      width: 310px;
+      height: 300px;
+      margin-bottom: 30px; }
+      @media screen and (max-width: 575px) {
+        main .manager-block .photo {
+          width: 290px; } }
+    main .manager-block .name-position {
+      float: left; }
+      main .manager-block .name-position h3 {
+        color: #232323;
+        font-size: 16px;
+        font-family: RalewayMedium, Arial, sans-serif;
+        margin-bottom: 10px;
+        text-align: left; }
+      main .manager-block .name-position h4 {
+        color: #b5a263; }
+    main .manager-block .social-icons {
+      float: right; }
+      main .manager-block .social-icons li {
+        margin: 0 4px;
+        display: inline-block; }
+        main .manager-block .social-icons li a {
+          display: block;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          background-color: #dedede;
+          font-size: 16px;
+          line-height: 35px;
+          width: 35px;
+          text-align: center;
+          color: white; }
+  main .container .manager-block:last-child {
+    margin-right: 0; }
+  main .btn-show-all {
+    display: block;
+    margin: auto auto 30px auto;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: 1px solid #24282f;
+    color: #24282f;
+    text-transform: uppercase;
+    font-family: OpenSansLight,Arial, sans-serif;
+    font-size: 16px;
+    width: 160px;
+    padding: 15px 40px; }
 
 /*# sourceMappingURL=style.css.map */

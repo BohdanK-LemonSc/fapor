@@ -23,8 +23,24 @@ $main-bg-color: #24282f;
   clear: both;
 }
 
-body {
-  overflow-x: hidden;
+.social-icons {
+  float: right;
+
+  li {
+    margin: 0 4px;
+    display: inline-block;
+
+    a {
+      display: block;
+      @include bodrer-radius(50%);
+      background-color: #dedede;
+      font-size: 16px;
+      line-height: 35px;
+      width: 35px;
+      text-align: center;
+      color: white;
+    }
+  }
 }
 
 h2 {
@@ -139,6 +155,10 @@ header {
       text-transform: uppercase;
       color: #FFFFFF;
       margin-bottom: 20px;
+      @include max-screen(575px) {
+        font-size: 30px;
+        text-align: center;
+      }
     }
 
     p {
@@ -193,26 +213,6 @@ main {
       h4 {
         @extend .main-font;
         color: #b5a263;
-      }
-    }
-
-    .social-icons {
-      float: right;
-
-      li {
-        margin: 0 4px;
-        display: inline-block;
-
-        a {
-          display: block;
-          @include bodrer-radius(50%);
-          background-color: #dedede;
-          font-size: 16px;
-          line-height: 35px;
-          width: 35px;
-          text-align: center;
-          color: white;
-        }
       }
     }
   }
@@ -292,7 +292,11 @@ main {
     top: 50%;
     left: 10px;
     outline: none;
+    @include max-screen(567px) {
+      top: 40%;
+    }
   }
+
 
   .owl-carousel .owl-nav button.owl-next {
     left: auto;
@@ -310,6 +314,136 @@ main {
   .owl-carousel .owl-nav button.owl-next:before {
     content: '\f105';
   }
+}
 
+footer {
+  .container {
+    max-width: 1140px;
+  }
 
+  .contacts {
+    padding: 80px 0 50px 0;
+    background-color: #2b2f35;
+
+    .container > div {
+      max-width: 300px;
+      @include max-screen(767px) {
+        width: 300px;
+      }
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @include max-screen(767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h3 {
+        font-family: RalewaySemiBold, Arial, sans-serif;
+        color: #b5a263;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      p {
+        @extend .main-font;
+        color: #6e7279;
+        line-height: 24px;
+        margin-bottom: 35px;
+      }
+
+      .custom-placeholder {
+        position: relative;
+
+        label {
+          position: absolute;
+          @extend .main-font;
+          color: #6e7279;
+          top: 13px;
+          left: 10px;
+          padding: 0 5px;
+          background-color: #2b2f35;
+          transition: top .2s ease-in-out, left .2s ease-in-out;
+        }
+
+        input {
+          padding: 8px 10px;
+          @extend .main-font;
+          color: #6e7279;
+          border: 1px solid #6e7279;
+          background-color: transparent;
+          width: 100%;
+          outline: none;
+          margin-bottom: 10px;
+          box-sizing: border-box;
+        }
+
+        input:focus + label {
+          top: -8px;
+          left: 5px;
+        }
+
+        input:not(:placeholder-shown) + label {
+          top: -8px;
+          left: 5px;
+        }
+
+        input:not(:-ms-input-placeholder) + label {
+          top: -8px;
+          left: 5px;
+        }
+
+      }
+
+      button {
+        background-color: #b5a263;
+        width: 100%;
+        line-height: 36px;
+        @extend .main-font;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copyright {
+    padding: 15px 0;
+    background-color: $main-bg-color;
+
+    span {
+      @extend .main-font;
+      display: block;
+      color: #6e7279;
+      float: left;
+      margin-top: 15px;
+      @include max-screen(575px) {
+        float: none;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .social-icons {
+      @include max-screen(575px) {
+        float: none;
+        text-align: center;
+      }
+    }
+
+    .social-icons li a {
+      background-color: transparent;
+      border: 1px solid #6e7279;
+      color: #6e7279;
+    }
+
+    .social-icons li:last-child a {
+      color: white;
+      background-color: #b5a263;
+    }
+  }
 }

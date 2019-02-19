@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'nexa_bold';
+    src: url('../fonts/nexa_bold.eot');
+    src: url('../fonts/nexa_bold.eot') format('embedded-opentype'),
+         url('../fonts/nexa_bold.woff2') format('woff2'),
+         url('../fonts/nexa_bold.woff') format('woff'),
+         url('../fonts/nexa_bold.ttf') format('truetype'),
+         url('../fonts/nexa_bold.svg#nexa_bold') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSansLight.eot');
+    src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansLight.woff2') format('woff2'),
+         url('../fonts/OpenSansLight.woff') format('woff'),
+         url('../fonts/OpenSansLight.ttf') format('truetype'),
+         url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.eot');
+    src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansRegular.woff2') format('woff2'),
+         url('../fonts/OpenSansRegular.woff') format('woff'),
+         url('../fonts/OpenSansRegular.ttf') format('truetype'),
+         url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../fonts/OpenSansSemiBold.eot');
+    src: url('../fonts/OpenSansSemiBold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansSemiBold.woff2') format('woff2'),
+         url('../fonts/OpenSansSemiBold.woff') format('woff'),
+         url('../fonts/OpenSansSemiBold.ttf') format('truetype'),
+         url('../fonts/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../fonts/RalewayBold.eot');
+    src: url('../fonts/RalewayBold.eot') format('embedded-opentype'),
+         url('../fonts/RalewayBold.woff2') format('woff2'),
+         url('../fonts/RalewayBold.woff') format('woff'),
+         url('../fonts/RalewayBold.ttf') format('truetype'),
+         url('../fonts/RalewayBold.svg#RalewayBold') format('svg');
+}
+
+@font-face {
+    font-family: 'RalewayMedium';
+    src: url('../fonts/RalewayMedium.eot');
+    src: url('../fonts/RalewayMedium.eot') format('embedded-opentype'),
+         url('../fonts/RalewayMedium.woff2') format('woff2'),
+         url('../fonts/RalewayMedium.woff') format('woff'),
+         url('../fonts/RalewayMedium.ttf') format('truetype'),
+         url('../fonts/RalewayMedium.svg#RalewayMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'RalewaySemiBold';
+    src: url('../fonts/RalewaySemiBold.eot');
+    src: url('../fonts/RalewaySemiBold.eot') format('embedded-opentype'),
+         url('../fonts/RalewaySemiBold.woff2') format('woff2'),
+         url('../fonts/RalewaySemiBold.woff') format('woff'),
+         url('../fonts/RalewaySemiBold.ttf') format('truetype'),
+         url('../fonts/RalewaySemiBold.svg#RalewaySemiBold') format('svg');
+}
